@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript
 
-# This script parse "split" bed files  (output of 'bedtools bamtobed -split') 
+# This script parses "split" bed files  (output of 'bedtools bamtobed -split') 
 # into bed files of the regions within read coordinate that are not directly
 # covered by the read sequence (that is, regions corresponding to introns).
 
