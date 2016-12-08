@@ -1,11 +1,11 @@
 #!/usr/bin/Rscript
 
-# This script parse .bedpe files ('bedtools genomecov -bedpe' outputs)
+# This script parse .bedpe files (output of 'bedtools bamtobed -bedpe')
 # in bed files with coordinates corresponding to the leftmost and rightmost
-# coordinate of the read pair.
+# coordinates of the read pair.
 
 # It is designed to work in a pipe such as:
-# bedtools genome cov -ibam .bam -bedpe | ./bedpe_helper.R > .bed
+# bedtools bamtobed -i .bam -bedpe | ./bedpe_helper.R > .bed
 
 f <- file("stdin")
 options(scipen = 999)
