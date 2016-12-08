@@ -1,7 +1,7 @@
 #!/usr/bin/Rscript
 
-# This script parse .bedpe files (output of 'bedtools bamtobed -bedpe')
-# in bed files with coordinates corresponding to the leftmost and rightmost
+# This script parses .bedpe files (output of 'bedtools bamtobed -bedpe')
+# into bed files with coordinates corresponding to the leftmost and rightmost
 # coordinates of the read pair.
 
 # It is designed to work in a pipe such as:
